@@ -1,6 +1,6 @@
 # Inspired by: https://github.com/python-xlib/python-xlib/blob/master/Xlib/support/unix_connect.py
 import socket
-from slodon.slodonix.errors import *
+from xlib.errors import *
 import re
 import os
 from typing import Type
@@ -8,7 +8,7 @@ import uuid
 from uuid import UUID
 
 # This project
-from slodon.slodonix.utils.func import is_socket_connected
+from xlib.utils.func import is_socket_connected
 
 
 SUPPORTED_PROTOCOLS = (None, "tcp", "unix")

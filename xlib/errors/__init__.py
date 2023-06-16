@@ -1,1 +1,1 @@
-from slodon.slodonix.errors.main import *
+from xlib.errors.main import *

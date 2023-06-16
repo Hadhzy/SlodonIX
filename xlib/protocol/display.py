@@ -1,7 +1,7 @@
 import uuid
 
 # This project
-from slodon.slodonix.protocol.connect import Connection
+from xlib.protocol.connect import Connection
 
 
 class BaseDisplay:

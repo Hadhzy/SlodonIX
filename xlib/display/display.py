@@ -2,7 +2,7 @@
 
 
 import os
-from slodon.slodonix.protocol.display import BaseDisplay
+from xlib.protocol.display import BaseDisplay
 
 
 class Display(BaseDisplay):

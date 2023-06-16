@@ -2,7 +2,7 @@
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from slodon.slodonix.display.display import Display
+    from xlib.display.display import Display
 
 
 class _ColorMap:

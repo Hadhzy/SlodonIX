@@ -1,8 +1,7 @@
 """Basic display"""
+from slodon.slodonix.systems.x.protocol.display import BaseDisplay
 
-
-import os
-from xlib.protocol.display import BaseDisplay
+__all__ = ["open_display", "Display"]
 
 
 class Display(BaseDisplay):
@@ -16,11 +15,16 @@ class Display(BaseDisplay):
         super().__init__(display=display)
 
 
-def open_display(name=os.environ["DISPLAY"]) -> Display:
+# Todo: if the default name is none or not provided connect to the default display
+def open_display(name=None) -> Display:
     """
     Open a display
 
-    name: The name of the display
+    name: The name of the display / os.environ["DISPLAY"]
+
+    Display names:
+        - UNIX
+        - OPEN VMS Display name
 
     Returns a display object
     """
